@@ -1,0 +1,18 @@
+<!-- blogs.component.html -->
+
+<div class="article-body list-group mt-3">
+  <article *ngFor="let blog of blogs" class="article-card list-group-item list-group-item-action">
+    <div class="img-box">
+      <img [src]="blog.image" [alt]="blog.title" class="article-banner">
+    </div>
+
+    <div class="article-content">
+      <a href="#">
+        <h3 class="article-title">{{ blog.title }}</h3>
+      </a>
+
+      <p class="article-description">{{ blog.description }}</p>
+    </div>
+  </article>
+</div>
+ 
